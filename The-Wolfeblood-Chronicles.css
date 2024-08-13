@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #333;
+}
+
+/* Header styles */
+header {
+  background-color: #002f6c; /* Navy */
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Updated shadow */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.fusion-logo {
+  display: flex;
+  align-items: center;
+}
+
+.fusion-logo img {
+  max-height: 50px; /* Adjusted to match new header */
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 10px;
+  position: relative;
+}
+
+nav ul li a {
+  color: #c0c0c0; /* Silver */
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 15px;
+  display: block;
+}
+
+nav ul li a:hover {
+  color: #f2c14e; /* Gold */
+  border-radius: 5px;
+}
+
+/* Dropdown Submenu */
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #002f6c; /* Navy */
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+nav ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+nav ul li ul li a {
+  color: #c0c0c0; /* Silver */
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+}
+
+nav ul li ul li a:hover {
+  color: #f2c14e; /* Gold */
+}
+
+/* Social Media Links */
+.social-media a {
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #ddd;
+}
+
+/* Book Section */
+#The-Wolfeblood-Chronicles {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.book-cover {
+    max-width: 300px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4a4a4a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
